@@ -3,7 +3,8 @@
 
 ## Synopsis
 
-	Evaluacion para PideloRapido developer Senior NodeJs and Angular2, para esta prueba se realiza carpeta donde ira codigo de RestFul y Codigo De App el nombre la app se creo con ionic2 y con Angular2
+	Evaluacion para PideloRapido developer Senior NodeJs and Angular2, para esta prueba se 
+	realiza carpeta donde ira codigo de RestFul y Codigo De App el nombre la app se creo con ionic2 y con Angular2
 	
 ## Instalacion
 
@@ -39,10 +40,12 @@
 		ionic cordova build android
 		ionic cordova run android
 	
-	Si todo sale bien nos creara un file en la carpeta de platforms dentro otra directorio llamado android dentro de android build
-	y buscar debug/out/apk/android-debug.apk
+	Si todo sale bien nos creara un file en la carpeta de platforms 
+	dentro otra directorio llamado android dentro de android build y 
+	buscar debug/out/apk/android-debug.apk
 
-	Si por alguna razon falla se debe de revisar version de Gradle en la consola de Android Studio y buscar solucion a lo que devuelva consola de android.
+	Si por alguna razon falla se debe de revisar version de Gradle,
+	en la consola de Android Studio y buscar solucion a lo que devuelva consola de android.
 
 
 
