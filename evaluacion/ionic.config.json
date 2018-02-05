@@ -1,0 +1,14 @@
+{
+  "name": "evaluacion",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/",
+      "proxyUrl": "http://127.0.0.1:8080"
+    }
+  ],
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

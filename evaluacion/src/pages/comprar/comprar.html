@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Comprar
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page3">
+
+  <div ion-item *ngFor="let cour of allDataProduct">
+    <img src="{{cour.image_path}}" >
+    <h2>{{ cour.product_name }}</h2>
+  </div>
+</ion-content>
