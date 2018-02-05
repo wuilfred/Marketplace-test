@@ -152,7 +152,8 @@ app.get('/products',function(req,res){
 		"products":""
 	};
 	
-	connection.query("SELECT * from app_products",function(err, rows, fields){
+	connection.query("select p.product_name, p.product_exist, p.product_price,  ip.image_path   from app_products p" /
+					"inner join app_image_product ip on p.idapp_product=ip.app_products_idapp_product; ",function(err, rows, fields){
 		if(rows.length != 0){
 			data["error"] = 0;
 			data["products"] = rows;
