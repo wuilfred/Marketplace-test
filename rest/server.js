@@ -105,6 +105,37 @@ app.post('/category',function(req,res){
 });
 
 
+app.post('/addCategory',function(req,res){
+	var category_name 			= req.body.category_name;
+	var category_description 	= req.body.category_description;
+	var category_images 		= req.body.category_images;
+	var category_tax 			= req.body.category_tax;
+	var data = {
+		"error": 1,
+		"category": category_description
+	};
+	if(!!category_name && !!category_description && !!category_images &&  !!category_tax){
+		connection.query("INSERT INTO app_category VALUES (?,?,?,?)",[
+			category_name, 
+			category_description,
+			category_images,
+			category_tax],function(err, rows, fields){
+				if(!!err){
+					data["category"] = "Error Adding data";
+				}else{
+					data["error"] = 0;
+					data["category"] = "category Added Successfully";
+				}
+				res.json(data);
+		});
+	}else{
+		data["category"] = "Please provide all required data (i.e : ategory_name, category_description, category_images, category_tax)";
+		res.json(data);
+	}
+});
+
+
+
 /**
  * Shipper
  **/
